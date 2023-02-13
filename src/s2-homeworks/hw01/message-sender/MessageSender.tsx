@@ -1,9 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react'
-import { message0 } from '../HW1'
+import {message0} from '../HW1'
 import s from './MessageSender.module.css'
 
+type MessageSenderType = any
 // компонента, которая тестирует вашу компоненту (не изменять, any не трогать)
-const MessageSender = (props: any) => {
+const MessageSender = (props: MessageSenderType) => {
     const M = props.M
     const textareaRef = useRef<HTMLTextAreaElement | null>(null);
     const [messages, setMessages] = useState<any[]>([])
@@ -42,7 +43,7 @@ const MessageSender = (props: any) => {
     return (
         <>
             {messages.map((m) => (
-                <M key={'message' + m.id} message={m} />
+                <M key={'message' + m.id} message={m}/>
             ))}
 
             <div id={'hw1-send-message-form'} className={s.sendForm}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Message from './message/Message'
+import {Message} from './message/Message'
 import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
@@ -27,10 +27,9 @@ export type MessageType = {
         time: string
     }
 }
-
 // структуру объекта не менять
 export const message0: MessageType = {
-    id: 0,
+    id: 5,
     user: {
         avatar: avatar,
         name: 'Lui',
@@ -52,10 +51,10 @@ export const friendMessage0: MessageType = {
     },
 }
 
-const HW1 = () => {
+export const HW1 = () => {
     return (
         <div id={'hw1'}>
-            <div className={s2.hwTitle}>Задача №1</div>
+            <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
@@ -69,5 +68,3 @@ const HW1 = () => {
         </div>
     )
 }
-
-export default HW1

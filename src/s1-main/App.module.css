@@ -1,6 +1,6 @@
 .App {
-    height: 720px;
-    width: 1280px;
+    --header_height: 60px;
+
 }
 
 .hw {

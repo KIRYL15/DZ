@@ -15,7 +15,6 @@ import avatar1 from './avatar1.png'
 * 5 - сделать стили в соответствии с дизайном
 * */
 
-// нужно создать правильный тип вместо any
 export type MessageType = {
     id: number,
     user: {

@@ -5,7 +5,7 @@
 }
 
 .textarea {
-    position: absolute;
+    position: center;
     width: 976px;
     height: 40px;
     left: 70px;
@@ -23,7 +23,7 @@
 }
 
 .button {
-    position: absolute;
+    position: center;
     width: 120px;
     height: 40px;
     left: 1090px;
